@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/cart.css">
+</head>
+
+<body>
+    <div class="header">
+        <h2>welcome to cart</h2>
+    </div>
+    <div class="main">
+        <div class="heading">
+            <h2>items list</h2>
+            <table class="menu-items">
+                <thead>
+                    <tr>
+                        <th>item</th>
+                        <th>item name</th>
+                        <th>quantity</th>
+                        <th>units</th>
+                        <th>unitPrice</th>
+                        <th>total</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                    <tr class="trow">
+                        <td><i class="fa-solid fa-burger size"></i></td>
+                        <td>pizza</td>
+                        <td>2</td>
+                        <td><button type="button"
+                                style="width:40px; border: none;"><span>-</span>1<span>+</span></button></td>
+                        <td>50</td>
+                        <td>100</td>
+                    </tr>
+                    <tr class="tbody">
+                        <td><i class="fa-solid fa-ice-cream" style="color: #ff0fd7;"></i></td>
+                        <td>ice-cream</td>
+                        <td>2</td>
+                        <td><button type="button"
+                                style="width:40px; border: none;"><span>-</span>1<span>+</span></button></td>
+                        <td>50</td>
+                        <td>100</td>
+                    </tr>
+                    <tr class="tbody">
+                        <td><i class="fa-solid fa-cookie" style="color: #e3bfe0;"></i></td>
+                        <td>cookie</td>
+                        <td>2</td>
+                        <td><button type="button"
+                                style="width:40px; border: none;">-1+</button></td>
+                        <td>50</td>
+                        <td>100</td>
+                    </tr>
+                    <tr class="tbody">
+                        <td><i class="fa-solid fa-cheese"></i></td>
+                        <td>candles</td>
+                        <td>2</td>
+                        <td><button type="button"
+                                style="width:40px; border: none;"><span>-</span>1<span>+</span></button></td>
+                        <td>50</td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="total_dts">
+            <h2>summary</h2>
+                <hr />
+            <div class="items-list">
+                
+                <h5>items</h5>
+
+                <h5 class="shipping">shipping:</h5>
+                <input type="text" placeholder="standerd delivery" />
+                <h5>coupon code</h5>
+                <input type="text" placeholder="enter yuor code" />
+                <h5>total price:</h5>
+                <button type="button">checkout</button>
+            </div>
+
+            <div class="cus_dts">
+                <h3>customer details:</h3>
+                <p id="dts"></p>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/cart.js"></script>
+</body>
+
+</html>
